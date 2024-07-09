@@ -1,0 +1,284 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  background-color: black;
+  color:white;
+}
+
+/*Nav bar Start*/
+.fixed-top {
+  background-color: black;
+}
+.me-auto,
+.offcanvas-title {
+  font-size: 30px;
+  font-family: var(--logo);
+   cursor: default;
+  color: white;
+}
+.me-auto:hover {
+  color: white;
+}
+
+
+.home-content h3{
+  font-size: 4.4rem;
+  font-weight: 700;
+  } 
+   
+  .home-content h6{
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      line-height: 1;
+      border-bottom: 3px solid rgb(42, 80, 38);
+      width: 40%;
+      }
+      
+
+.navbar-toggler {
+  border: none;
+  background-color:rgb(138, 138, 138);
+  margin-left: 5px;
+}
+.navbar-toggler:focus,
+.btn-close:focus {
+  color: #000;
+  box-shadow: none;
+  outline: none;
+}
+ .btn-home {
+  color: white;
+}
+ 
+.sub-btn {
+  color:white;
+} 
+
+.nav-link {
+  font-weight: 700;
+  position: relative;
+}
+
+ul {
+  gap: 25px;
+}
+
+ .offcanvas-body,
+.offcanvas-header {
+  background-color: black;
+}
+
+.offcanvas-header .btn-close {
+  background-color: #ccd6f6d4; 
+ } 
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .btn-home:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .sub-btn:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+  .fixed-top {
+    padding: 10px 70px;
+  }
+} 
+/*Navbar End*/
+
+/*Home */
+
+.home-text h1 {
+  font-size: 50px;
+}
+.home-text p {
+  font-size: 18px;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+}
+
+.logo a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 40px;
+}
+
+.logo a:hover {
+  transform: scale(1.2);
+}
+
+.logo a i {
+  color: #f8fafa;
+}
+
+.logo a.github:hover i {
+  color: #4183c4;
+}
+
+.logo a.instagram:hover i {
+  color: #e4405f;
+}
+
+.logo a.whatsapp:hover i {
+  color: #25d366;
+}
+
+.logo a.linkedin:hover i {
+  color: #0e76a8;
+} 
+
+.p-head {
+  font-size: 2.5em;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 1.2s forwards;
+  color: var(--ternary-text);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*skill*/
+
+
+
+.skills ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  margin: 20px 0;
+}
+
+.bar {
+  background-color: #353b48;
+  display: block;
+  height: 5px; /* Increased height for better visibility */
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+  position: relative; /* Added for positioning the inner span */
+}
+
+.bar span {
+  height: 100%;
+  display: block; /* Changed from float to display block for better alignment */
+  background-color: #2187e7;
+}
+
+.html {
+  width: 80%;
+  animation: html 2s forwards; /* Added forwards to keep the final state */
+}
+
+.css {
+  width: 93%;
+  animation: css 2s forwards;
+}
+
+.javascript {
+  width: 50%;
+  animation: javascript 2s forwards;
+}
+
+.jquery {
+  width: 30%;
+  animation: jquery 2s forwards;
+}
+
+@keyframes html {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 80%;
+  }
+}
+
+@keyframes css {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 93%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 50%;
+  }
+}
+
+@keyframes jquery {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 30%;
+  }
+}
+/*works*/
+
+.work-item img{
+  transition:transform 0.3s ease-in-out;
+}
+.work-item img:hover{
+  transform:scale(1.05);
+}
+
+
+
+.contact h1 {
+  color: white;
+}
+
+
+.btn-submit {
+  border: 1px solid white;
+  background: none;
+  padding: 10px 30px;
+  color:white;
+  transform: translateY(-6px);
+  transition: transform ease 0.1s;
+  font-weight: bold;
+}
+  
